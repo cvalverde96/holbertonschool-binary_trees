@@ -25,8 +25,8 @@ void binary_tree_delete(binary_tree_t *tree)
 		 * free(tree->left);
 		 * free(tree->right);
 		 */
-		binary_tree_delete(free->right);
-		binary_tree_delete(free->left);
+		binary_tree_delete(tree->right);
+		binary_tree_delete(tree->left);
 
 		free(tree);
 	}
